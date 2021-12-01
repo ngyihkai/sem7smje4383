@@ -31,3 +31,5 @@ for word in data_file:		# for each word in the file
 	print(vowel_str)
 	if vowel_str == 'aeiou': #get vowels in order
 		print (word)		#chk if u hv exactly all vowels in order
+
+dr we need to take cellular tower photo?
