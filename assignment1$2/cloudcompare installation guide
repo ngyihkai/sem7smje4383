@@ -1,0 +1,63 @@
+sudo apt install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh -O ~/Downloads/Anaconda3-2020.11-Linux-x86_64.sh
+cd ~/Downloads
+sudo chmod +x Anaconda3-2020.11-Linux-x86_64.sh
+./Anaconda3-2020.11-Linux-x86_64.sh
+
+ldd --version
+conda activate
+conda create --name CloudComPy39 python=3.9
+
+conda activate CloudComPy39
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+conda install boost cgal cmake eigen ffmpeg gdal jupyterlab matplotlib mysql numpy opencv openmp pcl pdal psutil "qhull=2019.1" qt scipy sphinx_rtd_theme spyder tbb tbb-devel xerces-c
+. ~/anaconda3/etc/profile.d/conda.sh
+export LD_LIBRARY_PATH=~/anaconda3/envs/CloudComPy39/lib:${LD_LIBRARY_PATH}
+export LD_LIBRARY_PATH=~/anaconda3/envs/CloudComPy39/lib/cloudcompare:${LD_LIBRARY_PATH}
+export LD_LIBRARY_PATH=~/anaconda3/envs/CloudComPy39/lib/cloudcompare/plugins:${LD_LIBRARY_PATH}
+~/anaconda3/envs/CloudComPy39/bin/CloudCompare
+
+sudo apt get install libomp5
+
+cd ~/anaconda3/envs/CloudComPy39/doc/PythonAPI_test
+ctest
+. envPyCC.sh
+python3 test001.py
+python3 test002.py
+python3 test003.py
+python3 test004.py
+python3 test005.py
+python3 test006.py
+python3 test007.py
+python3 test008.py
+python3 test009.py
+python3 test010.py
+python3 test011.py
+python3 test012.py
+python3 test013.py
+python3 test014.py
+python3 test015.py
+python3 test016.py
+python3 test017.py
+python3 test018.py
+python3 test019.py
+python3 test020.py
+python3 test021.py
+python3 test022.py
+python3 test023.py
+python3 test024.py
+python3 test025.py
+python3 test026.py
+python3 test027.py
+
+
+snap install core
+sudo snap install cloudcompare
+cloudcompare.CloudCompare
+
+. ~/anaconda3/etc/profile.d/conda.sh
+. ~/anaconda3/envs/CloudComPy39/bin/condaCloud.sh activate CloudComPy39
+. ~/anaconda3/envs/CloudComPy39/bin/condaCloud.sh
+CloudCompare
+python3 myscript.py
