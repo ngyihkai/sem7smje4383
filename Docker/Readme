@@ -1,0 +1,29 @@
+Tutorials
+https://www.youtube.com/watch?v=bi0cKgmRuiA
+
+new project: fastapi (https://fastapi.tiangolo.com/)
+pip freeze > requirement.txt
+cd Docker/fastapi/app
+docker build -t python-fastapi .
+docker run -p 8000:8000 python-fastapi
+open link
+open docker desktop app
+click terminal in docker desktop app
+
+in terminal:
+1. docker ps
+2. copy container id
+3. docker exec -it container id /bin/sh
+4. ls
+5. cd ..
+6. cd fastapi-app
+7. ls
+8. cd app
+9. ls
+
+Result in
+1. docker.PNG
+2. docker1.PNG
+3. docker2.PNG
+
+cd Docker\venv\Scripts\activate.bat
