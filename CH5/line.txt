@@ -25,11 +25,10 @@ def get_vowels_in_word (word) :
 print ("Find words containing vowels 'aeiou' in that order :")
 for word in data_file:		# for each word in the file
 	word = clean_word (word) #clean the word
+	print (word, 'has', len(word))
 	if len (word) <= 3:		# if word is too small, skip it
 		continue
 	vowel_str= get_vowels_in_word (word)
 	print(vowel_str)
 	if vowel_str == 'aeiou': #get vowels in order
 		print (word)		#chk if u hv exactly all vowels in order
-
-dr we need to take cellular tower photo?
