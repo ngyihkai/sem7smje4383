@@ -31,4 +31,4 @@ for word in data_file:		# for each word in the file
 	vowel_str= get_vowels_in_word (word)
 	print(vowel_str)
 	if vowel_str == 'aeiou': #get vowels in order
-		print (word)		#chk if u hv exactly all vowels in order
+		print ("this word has vowel which is from", word)		#chk if u hv exactly all vowels in order
