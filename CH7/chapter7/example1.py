@@ -7,7 +7,7 @@ class MyClass (object):
 		self.instance_attribute = param1
 
 my_instance = MyClass()
-print("Output of dir(my_instance:")
+print("Output of dir(my_instance):")
 print(dir(my_instance))
 my_instance.my_method('world')
 print("Instance has new attribute with value: {}".format (my_instance.instance_attribute))

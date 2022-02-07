@@ -1,0 +1,6 @@
+thread = threading.Thread(target=(lambda: action(2)))     #lambda: used to pop up a new ui after user keey in username
+threading.Thread(target=action, args=(2,)).start()
+_thread.start_new_thread(action, (2,))                    # all-function interface
+
+
+_thread.start_new_thread(obj.action, ())           #method inside the class

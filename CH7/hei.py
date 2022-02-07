@@ -1,11 +1,11 @@
 #Using make_db_classes.
 import shelve
 from person import Person 
-from manager import Manager
+from manager import manager
 
 bob =Person ('Bob Smith', 42, 30000, 'software') 
 sue =Person ('Sue Jones', 45, 40000, 'hardware')
-tom =Manager('Tom Doe', 50, 50000)
+tom =manager('Tom Doe', 50, 50000)
 
 db= shelve.open('class-shelve')
 db['bob'] =bob
@@ -21,7 +21,7 @@ for key in db:
     print(key, '=>\n', db[key].name, db[key].pay)
 
 bob = db ['bob']
-print (bob.lastName()) 
+print (bob.lastName())
 print (db['tom'].lastName())
 
 #Using update_db_classes
@@ -35,5 +35,5 @@ db['sue'] =sue
 
 tom= db['tom']
 tom.giveRaise(.20) 
-db['ton'] = tom 
+db['tom'] = tom
 db.close()

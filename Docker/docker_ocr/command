@@ -8,3 +8,6 @@ docker run -p 8000:8000 python-ocr
 #new terminal
 # cd ~/Desktop/Chua_Kiang_Hong_A18MJ0029/docker_jpnOCR
 docker ps
+
+in W10:
+tesseract -l eng Capture.JPG ans

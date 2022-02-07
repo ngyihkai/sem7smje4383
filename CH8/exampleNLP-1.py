@@ -10,7 +10,7 @@ from pathlib import Path
 
 text1 = 'Tomorrow will be a great weekend for us'
 blob1 = TextBlob(text1)
-blob1.detect_language()
+#blob1.detect_language()
 print(blob1.translate(to='ja'))
 
 # Polarity: -1.0 (Negative) to 1.0 (Positive)

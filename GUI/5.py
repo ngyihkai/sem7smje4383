@@ -8,11 +8,11 @@ def reply(name):
 
 top = Tk()
 top.title('Echo')
-top.iconbitmap('py-blue-trans-out.ico')
+#top.iconbitmap('py-blue-trans-out.ico')
 
 Label(top, text='Enter your name:').pack(side=TOP)
 ent = Entry(top)
 ent.pack(side=TOP)
-btn = Button(top, text='Submit', command=(lambda: reply(ent.get())))
-btn.pack(side=LEFT)
+btn = Button(top, text='Submit', command=(lambda: reply(ent.get())))  #lambda: used to pop up a new ui after user keey in username
+btn.pack(side=TOP)
 top.mainloop()

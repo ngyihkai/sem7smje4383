@@ -12,7 +12,7 @@ print(dir(my_instance))
 
 #my_instance.my_method('world') # adds the instance attribute
 print("Instance has new attribute with value: {}".\
-format(my_instance.instance_attribute))
+      format(my_instance.instance_attribute))
 
 print("output of dir(my instance):")
 print(dir(my_instance))
